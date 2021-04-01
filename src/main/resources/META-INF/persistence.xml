@@ -4,6 +4,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/Ecomerce</jta-data-source>
         <class>com.myspace.persist.Employee</class>
+        <class>com.myspace.persist.Address</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
