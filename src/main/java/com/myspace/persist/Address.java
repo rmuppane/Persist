@@ -7,29 +7,49 @@ package com.myspace.persist;
 @javax.persistence.Entity
 public class Address implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "ADDRESS_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "ADDRESS_ID_GENERATOR", sequenceName = "ADDRESS_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "ADDRESS_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "ADDRESS_ID_GENERATOR", sequenceName = "ADDRESS_ID_SEQ")
+	private java.lang.Long id;
 
-    public Address() {
-    }
-    
-    public Address(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String firstLine;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String secondLine;
 
+	public Address() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getFirstLine() {
+		return this.firstLine;
+	}
+
+	public void setFirstLine(java.lang.String firstLine) {
+		this.firstLine = firstLine;
+	}
+
+	public java.lang.String getSecondLine() {
+		return this.secondLine;
+	}
+
+	public void setSecondLine(java.lang.String secondLine) {
+		this.secondLine = secondLine;
+	}
+
+	public Address(java.lang.Long id, java.lang.String firstLine,
+			java.lang.String secondLine) {
+		this.id = id;
+		this.firstLine = firstLine;
+		this.secondLine = secondLine;
+	}
 
 }
