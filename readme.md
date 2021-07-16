@@ -89,5 +89,9 @@ Point of attention (NOTE)
 Official documentation:
 =======================
 [PAM 7.9 persist variable](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.9/html-single/managing_red_hat_process_automation_manager_and_kie_server_settings/index#process-variables-persist-proc_execution-server)
+
 [JBoss EAP 7.3 datasource](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.3/html/configuration_guide/datasource_management)
+
 [External Blog](https://karinavarela.me/2020/06/17/persisting-custom-data-configuring-external-persistence/)
+
+
