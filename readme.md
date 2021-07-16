@@ -1,16 +1,23 @@
 Introduction
 =============
-This project will demonstrate, persistence.
+This project will demonstrate, persistence of process variable.
+
+Generally there are two kinds of requireemnts,
+Requirement 1: Persisting process variables in a separate database schema in Red Hat Process Automation Manager.
+Requirement 2: Persisting process variables in a Red Hat Process Automation Manager database (Along with RHPAM tables).
+
+In this example we are covering requirement 1.
 
 Versions
 ========
 EAP: JBOSS 7.3.3
+
 RHPAM: 7.10.1
 
-Create a new Datasource
-(needed if the persistable variable need to be persisted in different schema)
-Refer to the official documentation to create a new Datasource  https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.3/html/configuration_guide/datasource_management
-example(mysql):
+Step 1: Create a new Datasource
+===============================
+Refer to the official documentation to [create a new Datasource](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.3/html/configuration_guide/datasource_management)   
+Example(mysql):
 
 <xa-datasource jndi-name="java:jboss/datasources/TEMENOS_SCHEMA" pool-name="TEMENOS_SCHEMA" enabled="true" use-java-context="true" use-ccm="true">
   <xa-datasource-property name="ServerName">localhost</xa-datasource-property>
