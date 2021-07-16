@@ -42,11 +42,16 @@ Step 2: Create and configure a persistable variable
 ===================================================
 a. Create a new Data Object and flag it as "Persistable"
 ![DATAMODEL](images/persistable.png)
+
 b. Create the needed fields. Example:
 ![ADDRESS](images/fields.png)
+
 c. Navigate to Project Settings > Persistence
+
 d. Insert the jndi name of the datasource
+
 e. Set the correct hibernate.dialect
+
 f. In the "Project Persistable Data Objects" add the fully qualified name of the created Data Object.
 ![PerssitSeetings](images/persistenceseetigns.png)
 ![Marshalling](images/marshalling.png)
@@ -54,19 +59,26 @@ f. In the "Project Persistable Data Objects" add the fully qualified name of the
 
 Step 3: Use the variable in a process
 =============================
-a. Create a new process definition
+a. Create a new process definition `SaveAddress.bpmn`
 ![ProcessDefinition](images/process.png)
+
 b. Create a new process variable
+
 c. Add an output variable to the Human Task
 ![HumanTask](images/ht.png)
+
 d. Save, Build and deploy
 
 Step 4: Test the process
 ========================
 a. Create a new instance of the process.
+
 b. Claim, start and complete the human task.
+
 c. Verify the variable instance has been saved on the external database.
+
 d. Verify in PAM 7 database that in the table VariableInstanceLog the inserted data are not visible.
+
 
 Point of attention (NOTE)
 =========================
