@@ -3,10 +3,14 @@ Introduction
 This project will demonstrate, persistence of process variable.
 
 Generally there are two kinds of requireemnts,
+
 Requirement 1: Persisting process variables in a separate database schema in Red Hat Process Automation Manager.
+
 Requirement 2: Persisting process variables in a Red Hat Process Automation Manager database (Along with RHPAM tables).
 
 In this example we are covering requirement 1.
+
+Addition to this there is another example in this project `save.bpmn` related to transaction rollback.
 
 Versions
 ========
